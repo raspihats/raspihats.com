@@ -1,0 +1,5 @@
+
+{% assign currency = include.price | slice: 0 %}
+{% assign price = include.price | remove: currency %}
+{% assign vat = site.vat | remove: "%" | divided_by: 100.00 | plus: 1.00 %}
+{{ currency }}{{ price | times: vat }}

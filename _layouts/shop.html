@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+</header>
+
+<div class=shop>
+{% for product in site.products %}
+    <div>
+        <a href="{{ site.baseurl }}{{product.permalink}}">
+            <img src="{{ site.baseurl }}/images/{{ product.images }}/1.png" alt="image" />
+            <div>
+                {{product.title}} 
+                <span class="short-description">
+                    ({{product.short_description}})
+                </span>
+            </div>
+            <div>{{product.price}} (incl. VAT {% include /functions/append_vat.html price=product.price %})</div>
+        </a>
+    </div>
+{% endfor %}
+</div>
