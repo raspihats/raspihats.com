@@ -4,20 +4,31 @@ layout: default
 
 
 <div class="product">
-    <div class="sp-wrap">
-        {% assign gallery = page.images | append: "/gallery" %}
-        {% for image in site.static_files %}
-            {% if image.path contains gallery %}
-                {% if image.path contains '_tn' %}
-                {% else %}
-                <a href="{{image.path}}"><img src="{{image.path | replace: '.', '_tn.'}}" alt="{{ page.title }}{{page.short_description}}"></a>
+    <div>
+        <div class="sp-wrap">
+            {% assign gallery = page.images | append: "/gallery" %}
+            {% for image in site.static_files %}
+                {% if image.path contains gallery %}
+                    {% if image.path contains '_tn' %}
+                    {% else %}
+                    <a href="{{image.path}}"><img src="{{image.path | replace: '.', '_tn.'}}" alt="{{ page.title }}{{page.short_description}}"></a>
+                    {% endif %}
                 {% endif %}
-            {% endif %}
-        {% endfor %}
+            {% endfor %}
+        </div>
     </div>
     <div>
         <h3>{{ page.title }}</h3>
-        <div class=features>{{page.short_description}}{{ page.features | markdownify }}</div>
+        <div class="features">{{page.short_description}}{{ page.features | markdownify }}</div>
+        <div class="badges">
+            <table>
+                <tr>
+                    {% for badge in page.badges %}
+                    <td><a href="{{badge.link}}"><img class="badge" src="{{site.baseurl}}/images/badges/{{badge.name}}.svg" alt="{{badge.name}}"></a></td>
+                    {% endfor %}
+                </tr>
+            </table>
+        </div>
         <div class="price">
             <div class="no-vat">{{ page.price }}</div>
             <div class="incl-vat">incl. VAT {% include /functions/append_vat.html price=page.price %}</div>

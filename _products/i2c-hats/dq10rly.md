@@ -14,6 +14,15 @@ features: |
     * 2000 VAC isolation voltage
     * Temperature operating range: -25 ~ +75°C
     * Stackable, up to 16x
+badges:
+    - name : python
+      link : https://pypi.python.org/pypi/raspihats
+    - name : node-js 
+      link : https://www.npmjs.com/package/raspihats
+    - name : node-red
+      link : https://www.npmjs.com/package/node-red-contrib-raspihats
+    - name : homeassistant
+      link : https://home-assistant.io/components/raspihats
 permalink: /products/i2c-hats/dq10rly
 ---
 
