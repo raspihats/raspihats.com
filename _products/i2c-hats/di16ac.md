@@ -2,7 +2,7 @@
 layout: product
 title: DI16ac I2C-HAT
 category: I2C-HAT
-images: i2c-hats/di16ac/gallery
+images: images/products/i2c-hats/di16ac
 price: €34
 short_description: 16 isolated digital input channels Raspberry Pi add-on board
 features: |
@@ -14,6 +14,8 @@ features: |
     * Stackable, up to 16x
 permalink: /products/i2c-hats/di16ac
 ---
+
+
 ### Description
 
 The DI16ac I2C-HAT is a 16 digital input channels Raspberry Pi add-on board that uses the I2C bus for communication with Raspberry Pi. It offers 16 isolated source/sink digital input channels. The input channels can be used to count edges, every input channel has two internal 32-bit counter attached, one for counting rising edges and the other for counting falling edges. The DI16ac also has 16 LED indicators for digital inputs status monitoring.
@@ -30,7 +32,7 @@ Users can stack up to 16x DI16ac I2C-HATs on one Raspberry Pi. Make sure every D
 | Operating Temperature   | -25 to 75°C                                                                  |
 | Watchdog Timer          | System and Communication                                                     |
 | **Digital Inputs**      |                                                                              |
-| Digital Input Channels  | 16                                                                            |
+| Digital Input Channels  | 16                                                                           |
 | Signal Type             | Sink, Source, isolated channels with common ground or power                  |
 | On Voltage Level        | +3 to +30V                                                                   |
 | Off Voltage Level       | +1V max.                                                                     |
@@ -40,7 +42,7 @@ Users can stack up to 16x DI16ac I2C-HATs on one Raspberry Pi. Make sure every D
 
 ## Connectors
 
-![connectors]({{site.baseurl}}/images/i2c-hats/di16ac/connectors.svg "DI16ac I2C-HAT connectors")
+![connectors]({{site.baseurl}}/{{page.images}}/connectors.svg "DI16ac I2C-HAT connectors")
 
 The DI16ac I2C-HAT has 2 connectors(each has 10 pin, 3.81mm pitch, detachable screw terminal). Their pins are divided into 4 blocks, 2 blocks on each of the connectors. Every block has 5 pins, 4 Digital Input pins and 1 Common pin.
 

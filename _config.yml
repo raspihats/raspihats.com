@@ -16,9 +16,9 @@
 title: Raspihats
 email: hardhat@raspihats.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Industrial strength add-on boards for Raspberry Pi
+  Industrial grade add-on boards for Raspberry Pi
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://raspihats.com" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  raspihats
 
