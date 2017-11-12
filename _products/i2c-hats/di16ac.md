@@ -3,7 +3,8 @@ layout: product
 title: DI16ac I2C-HAT
 category: I2C-HAT
 images: images/products/i2c-hats/di16ac
-price: €34
+price: €34.00
+relation_rank: 3
 short_description: 16 isolated digital input channels Raspberry Pi add-on board
 features: |
     * 16 isolated digital input channels

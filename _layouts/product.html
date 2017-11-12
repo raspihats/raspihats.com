@@ -11,7 +11,7 @@ layout: default
                 {% if image.path contains gallery %}
                     {% if image.path contains '_tn' %}
                     {% else %}
-                    <a href="{{image.path}}"><img src="{{image.path | replace: '.', '_tn.'}}" alt="{{ page.title }}{{page.short_description}}"></a>
+                    <a href="{{ image.path }}"><img src="{{ image.path | replace: '.', '_tn.' }}" alt="{{ page.title }}{{ page.short_description }}"></a>
                     {% endif %}
                 {% endif %}
             {% endfor %}
@@ -19,12 +19,12 @@ layout: default
     </div>
     <div>
         <h3>{{ page.title }}</h3>
-        <div class="features">{{page.short_description}}{{ page.features | markdownify }}</div>
+        <div class="features">{{ page.short_description }}{{ page.features | markdownify }}</div>
         <div class="badges">
             <table>
                 <tr>
                     {% for badge in page.badges %}
-                    <td><a href="{{badge.link}}"><img class="badge" src="{{site.baseurl}}/images/badges/{{badge.name}}.svg" alt="{{badge.name}}"></a></td>
+                    <td><a href="{{ badge.link }}"><img class="badge" src="{{ site.baseurl }}/images/badges/{{badge.name}}.svg" alt="{{ badge.name }}"></a></td>
                     {% endfor %}
                 </tr>
             </table>
@@ -37,10 +37,43 @@ layout: default
 </div>
 
 
-{{content}}
+{{ content }}
 
-<script type="text/javascript" src="{{site.baseurl}}/js/jquery-2.1.3.min.js"></script>
-<script type="text/javascript" src="{{site.baseurl}}/js/smoothproducts.min.js"></script>
+<!-- Related products -->
+<h2>Related products</h2>
+<table class="related-products">
+    {% assign relation_rank_max = 0 %}
+    {% for product in site.products %}
+        {% if product.category == page.category %}
+            {% if product.relation_rank > relation_rank_max %}
+                {% assign relation_rank_max = product.relation_rank %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+    <tr>
+    {% for rank in (1..relation_rank_max) %}
+        {% for product in site.products %}
+            {% if product.category == page.category %}
+                {% if product.relation_rank == rank %}
+                    {% if product.title != page.title %}
+                    <td>
+                        <a href="{{ product.permalink }}">
+                            <img src="{{ site.baseurl }}/{{ product.images }}/gallery/1_tn.jpg"/>
+                            <div>{{ product.title }}</div>
+                        </a>
+                    </td>
+                    {% endif %}
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+    </tr>
+</table>
+
+
+
+<script type="text/javascript" src="{{ site.baseurl }}/js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/smoothproducts.min.js"></script>
 <script type="text/javascript">
     /* wait for images to load */
     $(window).load( function() {

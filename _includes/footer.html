@@ -2,21 +2,18 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    <!-- <div class="footer-heading">{{ site.title | escape }} - {{ site.description | escape }}</div> -->
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
+          <li>{{ site.title | escape }}</li>
+          <li>{{ site.company.name | escape }}</li>
+          <li>{{ site.company.vat_code | escape }}</li>
+          <li>{{ site.company.address | escape }}</li>
+          <li>{{ site.company.phone | escape }}</li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+
         </ul>
       </div>
 

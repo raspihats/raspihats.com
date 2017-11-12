@@ -19,8 +19,15 @@ description: >- # this means to ignore newlines until "baseurl:"
   Industrial grade add-on boards for Raspberry Pi
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://raspihats.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+company:
+  name: DABATOP INDUSTRIES S.R.L. 
+  vat_code: RO37355541
+  address: Bucegi, 31C, Chisoda, Timis, Romania
+  phone: "+40736522486"
+
 # twitter_username: jekyllrb
-github_username:  raspihats
+github_username: raspihats
 
 # Build settings
 markdown: kramdown

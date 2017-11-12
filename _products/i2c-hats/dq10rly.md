@@ -3,7 +3,8 @@ layout: product
 title: DQ10rly I2C-HAT
 category: I2C-HAT
 images: images/products/i2c-hats/dq10rly
-price: €43
+price: €43.00
+relation_rank: 3
 short_description: 10 relay output channels Raspberry Pi add-on board
 features: |
     * 10 relay output channels(5A@250VAC)

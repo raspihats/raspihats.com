@@ -3,7 +3,8 @@ layout: product
 title: DI6acDQ6rly I2C-HAT
 category: I2C-HAT
 images: images/products/i2c-hats/di6acdq6rly
-price: €40
+price: €40.00
+relation_rank: 3
 short_description: 6 isolated digital input channels and 6 relay output channels Raspberry Pi add-on board
 features: | 
     * 6 isolated digital input channels
