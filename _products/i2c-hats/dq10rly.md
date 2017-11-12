@@ -66,4 +66,7 @@ First connector(10 pin) is used by the first 5 Relay Output channels, the second
  2. COMx – Common
 where x is the channel index, range is [0..9]
 
-For details about wiring diagrams check the Relay Outputs in the Application Wiring post
+For details about wiring diagrams check the Relay Outputs in the [Application Wiring post][application-wiring]
+
+
+[application-wiring]: {{site.baseurl}}/i2c-hat/2016/02/21/application-wiring.html

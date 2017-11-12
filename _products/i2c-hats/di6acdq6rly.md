@@ -81,4 +81,6 @@ The second connector(12 pin) is used by the 6 Relay Output channels. Every Relay
  2. COMx – Common
 where x is the channel index, range is [0..5]
 
-For details about wiring diagrams check the Digital Inputs Sink/Source Types and Relay Outputs in the Application Wiring post
+For details about wiring diagrams check the Digital Inputs Sink/Source Types and Relay Outputs in the [Application Wiring post][application-wiring]
+
+[application-wiring]: {{site.baseurl}}/i2c-hat/2016/02/21/application-wiring.html

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Raspberry Pi relay tutorial"
+title:  Raspberry Pi relay tutorial
 date:   2017-09-12 14:14:02 +0300
 categories: i2c-hat usage
 ---

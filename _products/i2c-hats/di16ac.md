@@ -62,4 +62,7 @@ Every input channel uses 2 pins:
 
 Input channels I0 to I3 use COM0, input channels I4 to I7 use COM1 and so on.
 
-For details about wiring diagrams check the Digital Inputs Sink/Source Types in the Application Wiring post
+For details about wiring diagrams check the Digital Inputs Sink/Source Types in the [Application Wiring post][application-wiring]
+
+
+[application-wiring]: {{site.baseurl}}/i2c-hat/2016/02/21/application-wiring.html
