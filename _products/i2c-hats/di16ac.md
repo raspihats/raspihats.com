@@ -33,6 +33,7 @@ The DI16ac I2C-HAT is a 16 digital input channels Raspberry Pi add-on board that
 The wide operating input voltage of the digital inputs is perfect for most applications. The isolation protects your Raspberry Pi from the harsh external environment.
 Users can stack up to 16x DI16ac I2C-HATs on one Raspberry Pi. Make sure every DI16ac from the stack has a unique I2C bus address. Setting the address value is accomplished using the on board I2C address jumpers.
 
+
 ### Specs
 
 |:------------------------|:-----------------------------------------------------------------------------|
@@ -50,6 +51,7 @@ Users can stack up to 16x DI16ac I2C-HATs on one Raspberry Pi. Make sure every D
 | Isolation Voltage       | 2000 VAC                                                                     |
 | Input Resistance        | 5.6K                                                                         |
 
+
 ## Connectors
 
 ![connectors]({{site.baseurl}}/{{page.images}}/connectors.svg "DI16ac I2C-HAT connectors")
@@ -62,7 +64,7 @@ Every input channel uses 2 pins:
 
 Input channels I0 to I3 use COM0, input channels I4 to I7 use COM1 and so on.
 
-For details about wiring diagrams check the Digital Inputs Sink/Source Types in the [Application Wiring post][application-wiring]
+For details about wiring diagrams check the Digital Inputs Sink/Source Types in the [Application wiring][application-wiring] post.
 
 
 [application-wiring]: {{site.baseurl}}/i2c-hat/2016/02/21/application-wiring.html

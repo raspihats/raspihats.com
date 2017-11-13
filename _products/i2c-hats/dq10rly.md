@@ -38,6 +38,7 @@ Users can stack up to 16x DQ10rly I2C-HATs on one Raspberry Pi. Make sure every 
 
 This type of HAT consumes a little more power than other types, check specs for power consumption. The reason for the power consumption is the high number of relays. Be careful when stacking multiple HATs that have relays in general.
 
+
 ### Specs
 
 |:------------------------|:-----------------------------------------------------------------------------|
@@ -54,6 +55,7 @@ This type of HAT consumes a little more power than other types, check specs for 
 | Operate Time            | 10ms                                                                         |
 | Release Time            | 5ms                                                                          |
 
+
 ### Connectors
 
 ![connectors]({{site.baseurl}}/{{page.images}}/connectors.svg "DQ10rly I2C-HAT connectors")
@@ -66,7 +68,7 @@ First connector(10 pin) is used by the first 5 Relay Output channels, the second
  2. COMx – Common
 where x is the channel index, range is [0..9]
 
-For details about wiring diagrams check the Relay Outputs in the [Application Wiring post][application-wiring]
+For details about wiring diagrams check the Relay Outputs in the [Application wiring][application-wiring] post.
 
 
 [application-wiring]: {{site.baseurl}}/i2c-hat/2016/02/21/application-wiring.html

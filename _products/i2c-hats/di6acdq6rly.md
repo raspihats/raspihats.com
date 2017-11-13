@@ -37,6 +37,7 @@ The DI6acDQ6rly I2C-HAT is a 6 digital input channels and 6 relay Raspberry Pi a
 
 Users can stack up to 16x DI6acDQ6rly I2C-HATs on one Raspberry Pi. Make sure every DI6acDQ6rly from the stack has a unique I2C bus address. Setting the address value is accomplished using the on board I2C address jumpers.
 
+
 ### Power Consumption
 
 This type of HAT consumes a little more power than other types, check specs for power consumption. The reason for the power consumption is the high number of relays. Be careful when stacking multiple HATs that have relays in general.
@@ -65,6 +66,7 @@ This type of HAT consumes a little more power than other types, check specs for 
 | Operate Time            | 10ms                                                                         |
 | Release Time            | 5ms                                                                          |
 
+
 ### Connectors
 
 ![connectors]({{site.baseurl}}/{{page.images}}/connectors.svg "DI6acDQ6rly I2C-HAT connectors")
@@ -81,6 +83,6 @@ The second connector(12 pin) is used by the 6 Relay Output channels. Every Relay
  2. COMx – Common
 where x is the channel index, range is [0..5]
 
-For details about wiring diagrams check the Digital Inputs Sink/Source Types and Relay Outputs in the [Application Wiring post][application-wiring]
+For details about wiring diagrams check the Digital Inputs Sink/Source Types and Relay Outputs in the [Application wiring][application-wiring] post.
 
 [application-wiring]: {{site.baseurl}}/i2c-hat/2016/02/21/application-wiring.html

@@ -24,7 +24,7 @@ layout: default
             <table>
                 <tr>
                     {% for badge in page.badges %}
-                    <td><a href="{{ badge.link }}"><img class="badge" src="{{ site.baseurl }}/images/badges/{{badge.name}}.svg" alt="{{ badge.name }}"></a></td>
+                    <td><a href="{{ badge.link }}"><img src="{{ site.baseurl }}/images/badges/{{badge.name}}.svg" alt="{{ badge.name }}"></a></td>
                     {% endfor %}
                 </tr>
             </table>

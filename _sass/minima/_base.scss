@@ -31,7 +31,7 @@ body {
  * Set `margin-bottom` to maintain vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
+p, blockquote, pre, table,
 ul, ol, dl, figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
@@ -46,7 +46,6 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
-
 
 
 /**
@@ -76,30 +75,22 @@ li {
   }
 }
 
+/**
+ * Tables
+ */
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  padding: 5px;
+  border: 1px solid #EFEFEF;
+}
 
 /**
  * Headings
  */
-
-h1 {
-  font-weight: $base-font-weight * 1.6;
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid #eaecef;
-}
-
-h2 {
-  font-weight: $base-font-weight * 1.4;
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid #eaecef;
-}
-
-h3 {
-  font-weight: $base-font-weight* 1.2;
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid #eaecef;
-}
-
-h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
   padding-bottom: 0.2em;
 }

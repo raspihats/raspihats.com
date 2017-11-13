@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Application Wiring
+title:  Application wiring
 date:   2016-02-21 14:14:02 +0300
 categories: I2C-HAT
 ---
