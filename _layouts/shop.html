@@ -8,18 +8,20 @@ layout: default
 
 <div class=shop>
 {% for product in site.products %}
-    <div>
+    <div class="product">
         <a href="{{ site.baseurl }}{{product.permalink}}">
             <img src="{{ site.baseurl }}/{{ product.images }}/gallery/1.jpg" alt="image" />
-            <div>
-                {{product.title}} 
-                <span class="short-description">
-                    ({{product.short_description}})
-                </span>
-            </div>
-            <div class="price">
-                <span class="no-vat">{{product.price}}</span> 
-                <span class="incl-vat">(incl. VAT {% include /functions/append_vat.html price=product.price %})</span>
+            <div class="details">
+                <div class="title">
+                {{product.title}}
+                </div> 
+                <div class="short-description">
+                    {{product.short_description}}
+                </div>
+                <div class="price">
+                    <div class="no-vat">{{product.price}}</div> 
+                    <div class="incl-vat">incl. VAT {% include /functions/append_vat.html price=product.price %}</div>
+                </div>
             </div>
         </a>
     </div>
