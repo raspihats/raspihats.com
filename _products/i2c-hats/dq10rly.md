@@ -28,7 +28,7 @@ permalink: /products/i2c-hats/dq10rly
 ---
 
 
-### Description
+## Description
 
 The DQ10rly I2C-HAT is a 10 relay Raspberry Pi add-on board that uses the I2C bus for communication with Raspberry Pi. The DQ10rly offers 10 channel Form A power relay outputs, it also has 10 LED indicators for power relay output state monitoring.
 
@@ -39,7 +39,7 @@ Users can stack up to 16x DQ10rly I2C-HATs on one Raspberry Pi. Make sure every 
 This type of HAT consumes a little more power than other types, check specs for power consumption. The reason for the power consumption is the high number of relays. Be careful when stacking multiple HATs that have relays in general.
 
 
-### Specs
+## Specs
 
 |:------------------------|:-----------------------------------------------------------------------------|
 | **General**             |                                                                              |
@@ -56,7 +56,7 @@ This type of HAT consumes a little more power than other types, check specs for 
 | Release Time            | 5ms                                                                          |
 
 
-### Connectors
+## Connectors
 
 ![connectors]({{site.baseurl}}/{{page.images}}/connectors.svg "DQ10rly I2C-HAT connectors")
 

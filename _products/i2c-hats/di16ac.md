@@ -26,7 +26,7 @@ permalink: /products/i2c-hats/di16ac
 ---
 
 
-### Description
+## Description
 
 The DI16ac I2C-HAT is a 16 digital input channels Raspberry Pi add-on board that uses the I2C bus for communication with Raspberry Pi. It offers 16 isolated source/sink digital input channels. The input channels can be used to count edges, every input channel has two internal 32-bit counter attached, one for counting rising edges and the other for counting falling edges. The DI16ac also has 16 LED indicators for digital inputs status monitoring.
 
@@ -34,7 +34,7 @@ The wide operating input voltage of the digital inputs is perfect for most appli
 Users can stack up to 16x DI16ac I2C-HATs on one Raspberry Pi. Make sure every DI16ac from the stack has a unique I2C bus address. Setting the address value is accomplished using the on board I2C address jumpers.
 
 
-### Specs
+## Specs
 
 |:------------------------|:-----------------------------------------------------------------------------|
 | **General**             |                                                                              |

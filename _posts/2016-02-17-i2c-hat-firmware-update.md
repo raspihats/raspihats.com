@@ -15,7 +15,7 @@ All `I2C-HATs` are based on STM32 ARM chips which have the integrated STM32 I2C 
 
 ## Download and install `stm32flash` on Raspberry Pi
 
-`stm32flash` is the tool you need to update the firmware on the `I2C-HAT`s.
+`stm32flash` is the tool you need to update the firmware on the `I2C-HATs`.
 
 Open a terminal on Raspberry Pi and go to the directory where you want to download `stm32flash`, type the following commands to download and install:
 
@@ -30,8 +30,8 @@ sudo make install
 
 Install the `BOOT` jumper **before** powering up the `I2C-HAT` on which you wish the firmware to be updated, the I2C address for the bootloader is specified in the following table:
 
-|:-------------------------------|:-------------|:----------------------------------|
 | I2C-HAT                        | ST Micro     | Bootloader I2C Address            |
+|:-------------------------------|:-------------|----------------------------------:|
 | [DI16ac][di16ac]               | STM32F042    | 0x3E                              |
 | [DQ10rly][dq10rly]             | STM32F042    | 0x3E                              |
 | [DI6acDQ6rly][di6acdq6rly]     | STM32F042    | 0x3E                              |

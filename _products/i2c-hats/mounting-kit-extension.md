@@ -12,7 +12,7 @@ permalink: /products/i2c-hats/mounting-kit-extension
 ---
 
 
-### Description
+## Description
 
 Mounting Kit Extension for I2C-HATs. Plastic spacer height is 20 mm.
 Do not over tighten when installing this product.
