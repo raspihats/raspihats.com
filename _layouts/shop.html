@@ -8,7 +8,9 @@ layout: default
 {% for product in site.products %}
     <div class="product">
         <a href="{{ site.baseurl }}{{product.permalink}}">
-            <img src="{{ site.baseurl }}/{{ product.images }}/gallery/1.jpg" alt="image" />
+            <div>
+                <img src="{{ site.baseurl }}/{{ product.images }}/gallery/1.jpg" alt="image" />
+            </div>
             <div class="details">
                 <div class="title">
                 {{product.title}}

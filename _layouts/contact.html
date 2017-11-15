@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<div class="contact">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <form id="contact" action="" method="post">
+        <fieldset>
+            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Subject" type="text" tabindex="3">
+        </fieldset>
+        <fieldset>
+            <textarea placeholder="Type your message here...." tabindex="4" required></textarea>
+        </fieldset>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit" class="g-recaptcha" data-sitekey="6LfkoTQUAAAAAAk_OTRZj9cWgPG02nGRpSKIPGyC" data-callback="YourOnSubmitFn">Submit</button>
+        </fieldset>
+  </form>
+</div>

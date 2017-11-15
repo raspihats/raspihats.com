@@ -6,11 +6,16 @@
 
 .shop .product {
   border: solid 1px #EFEFEF;
-  /*padding: 10px;*/
 }
 
 .shop .product:hover {
   border: solid 1px #CCC;
+}
+
+.shop .product a {
+  width: 100%;
+  /*padding: 10px;*/
+  /*display: block;*/
 }
 
 .shop .product a:hover {
@@ -21,6 +26,11 @@
   text-decoration: underline;
 }
 
+.shop .product a div {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .shop .product .details {
   padding: 10px;
 }
@@ -29,6 +39,11 @@
   color: rgb(76, 122, 196);
   font-size: 1.4em;
   /*text-align: center;*/
+}
+
+.shop .product .short-description {
+  color: #777;
+  font-size: 0.8em;
 }
 
 .shop .product .price {
@@ -45,9 +60,4 @@
   color: rgb(76, 122, 196);
   font-size: 0.8em;
   text-align: right;
-}
-
-.shop .product .short-description {
-  color: #24292e;
-  font-size: 0.8em;
 }
