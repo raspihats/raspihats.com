@@ -1,0 +1,50 @@
+.product {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  box-sizing: border-box;
+}
+
+.product > div {
+  padding: 1em;
+}
+
+.product .badges table {
+  border: none;
+}
+
+.product .badges tr {
+  border: none;
+}
+
+.product .badges td {
+  border: none;
+}
+
+.product .badges img {
+  border: solid 1px #EFEFEF;
+}
+
+.product .badges a:hover img {
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+    box-shadow: 1px 1px 5px #999;
+}
+
+/* Price */
+.product .price {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-rows: auto;
+}
+
+.product .price .no-vat {
+  color: rgb(78, 132, 219);
+  /*color: rgb(77, 226, 152);*/
+  font-size: 3em;
+}
+
+.product .price .incl-vat {
+  color: rgb(76, 122, 196);
+  font-size: 1em;
+}

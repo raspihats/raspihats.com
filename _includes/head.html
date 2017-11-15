@@ -10,117 +10,11 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
+  <link rel="stylesheet" href="{{ "/css/shop.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/css/product.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/css/smoothproducts.css" | relative_url }}">
 
-
   <style>
-
-    .shop {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 10px;
-    }
-
-    .shop .product {
-      border: solid 1px #EFEFEF;
-      /*padding: 10px;*/
-    }
-
-    .shop .product:hover {
-      border: solid 1px #CCC;
-    }
-
-    .shop .product a:hover {
-      text-decoration: none;
-    }
-
-    .shop .product a:hover .title {
-      text-decoration: underline;
-    }
-
-    .shop .product .details {
-      padding: 10px;
-    }
-
-    .shop .product .title {
-      color: rgb(76, 122, 196);
-      font-size: 1.4em;
-      /*text-align: center;*/
-    }
-
-    .shop .product .price {
-      float: right;
-    }
-
-    .shop .product .price .no-vat {
-      color: rgb(78, 132, 219);
-      font-size: 1.2em;
-      text-align: right;
-    }
-
-    .shop .product .price .incl-vat {
-      color: rgb(76, 122, 196);
-      font-size: 0.8em;
-      text-align: right;
-    }
-
-    .shop .product .short-description {
-      color: #24292e;
-      font-size: 0.8em;
-    }
-
-    .product {
-      display: grid;
-      /*grid-template-columns: 1.5fr 2fr;*/
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      box-sizing: border-box;
-    }
-
-    .product > div {
-      padding: 1em;
-    }
-
-    /* Price */
-    .price {
-      display: grid;
-      grid-template-rows: 1fr 1fr;
-      grid-auto-rows: auto;
-    }
-
-    .price div.no-vat {
-      color: rgb(78, 132, 219);
-      /*color: rgb(77, 226, 152);*/
-      font-size: 3em;
-    }
-
-    .price div.incl-vat {
-      color: rgb(76, 122, 196);
-      font-size: 1em;
-    }
-
-    .badges table {
-      border: none;
-    }
-
-    .badges tr {
-      border: none;
-    }
-
-    .badges td {
-      border: none;
-    }
-
-    .badges img {
-      border: solid 1px #EFEFEF;
-    }
-
-    .badges a:hover img {
-        border: solid 1px #CCC;
-        -moz-box-shadow: 1px 1px 5px #999;
-        -webkit-box-shadow: 1px 1px 5px #999;
-        box-shadow: 1px 1px 5px #999;
-    }
-
   </style>
   
   {% if jekyll.environment == 'production' and site.google_analytics %}
