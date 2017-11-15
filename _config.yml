@@ -14,7 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Raspihats
-email: hardhat@raspihats.com
+recaptcha-email: >-
+  <a href="http://www.google.com/recaptcha/mailhide/d?k=01hE_ANQDcZcqtkzqa2hcLdw==&amp;c=CPILYvFFuDmjiBNsBBtzStax2_o5RYTlrL65ixPTqWI=" 
+  onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01hE_ANQDcZcqtkzqa2hcLdw\x3d\x3d\x26c\x3dCPILYvFFuDmjiBNsBBtzStax2_o5RYTlrL65ixPTqWI\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); 
+  return false;" title="Reveal this e-mail address">
+  h............</a>@raspihats.com
 description: >- # this means to ignore newlines until "baseurl:"
   Industrial grade add-on boards for Raspberry Pi
 baseurl: "" # the subpath of your site, e.g. /blog
